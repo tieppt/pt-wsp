@@ -1,0 +1,21 @@
+{
+  "npmScope": "ptws",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "client": {
+      "tags": []
+    },
+    "client-e2e": {
+      "tags": []
+    },
+    "web-core-ui": {
+      "tags": []
+    }
+  }
+}
