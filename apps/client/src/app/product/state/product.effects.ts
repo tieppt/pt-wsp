@@ -7,8 +7,8 @@ import { ProductState } from './product.reducer';
 
 
 @Injectable()
-export class ProductsEffects {
-  @Effect() loadProducts$ = this.dataPersistence.fetch(ProductActionTypes.LoadProduct, {
+export class ProductEffects {
+  @Effect() loadProduct$ = this.dataPersistence.fetch(ProductActionTypes.LoadProduct, {
     run: (action: LoadProduct, state: ProductState) => {
       // Your custom REST 'load' logic goes here. For now just return an empty list...
       return new ProductLoaded([]);

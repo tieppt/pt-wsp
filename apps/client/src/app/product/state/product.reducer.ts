@@ -14,11 +14,14 @@ export interface ProductState {
 }
 
 export const initialState: ProductEntity = {
-  list: [],
-  loaded: false
+  list: [{
+    id: '1',
+    name: 'Product 01'
+  }],
+  loaded: true
 };
 
-export function productsReducer(state: ProductEntity = initialState, action: ProductAction): ProductEntity {
+export function productReducer(state: ProductEntity = initialState, action: ProductAction): ProductEntity {
   switch (action.type) {
     case ProductActionTypes.ProductLoaded: {
       state = {
